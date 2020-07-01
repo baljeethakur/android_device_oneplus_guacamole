@@ -15,7 +15,7 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosip_guacamole
+PRODUCT_NAME := derp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7 Pro
@@ -24,6 +24,9 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
+
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3120
