@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_guacamole.mk
+    $(LOCAL_DIR)/xtended_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_guacamole-user \
-    aosp_guacamole-userdebug \
-    aosp_guacamole-eng
+    xtended_guacamole-user \
+    xtended_guacamole-userdebug \
+    xtended_guacamole-eng

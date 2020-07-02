@@ -22,18 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1440
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+# Build type
+XTENDED_BUILD_TYPE := OFFICIAL
 
-PRODUCT_NAME := aosp_guacamole
+# Maintainer
+XTENDED_MAINTAINER := Chandra_Chaganti
+
+PRODUCT_NAME := xtended_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
